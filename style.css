@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	color: #757575;
+	font-family: Arial, sans-serif; 
+	background-color: #f9cef6;
+	        				/*Цвет заднего фона body должен быть #f9cef6*/
+}
+
+.header {
+	background-color: #eeeeee;
+}
+
+.header-nav {
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+}
+h1 {
+	margin: 30px 0 30px 0;
+	padding: 0px 15px 0px 15px;
+	font-size: 36px;                 	/*Добавьте внутренний отступ слева и справа: по 15px */
+                        	/*Размер шрифта 36px */
+	color: #ff5f94;                                        
+}
+
+.header_img {
+	display: inline-block;
+	width: 240px;					    /*Ширина картинки 240px*/
+	height: 130px;
+}
+
+ul {
+	margin-left: 30px;
+}
+
+li {
+	display: inline-block;        				/*Присвойте значение inline-block для списка*/
+	padding: 0 15px 15px 25px;
+	list-style: none;
+	font-family: Arial, sans-serif;
+	color: #757575;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+li:hover {
+	color: #ff5f94;
+}
+
+li a {
+	display: inline;
+	font: 16px Arial, sans-serif;
+	color: inherit;
+	text-decoration: none;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 30px 0;          
+	background-color: #c9e8af; 	/*Цвет заднего фона баннера должен быть #c9e8af*/
+}
+.banner-img {
+	width: 380px;
+}
+
+button {
+	border: 1px solid #ffffff;
+	border-radius: 50px;
+	color: #ffffff;
+	background-color: #ab64f3;
+	text-transform: uppercase;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.banner-btn {
+	align-self: center;
+	width: 220px;                    /*Ширина кнопки должна составлять 220px*/
+	margin: 20px 0 0 20px;
+	padding: 15px;
+	border: 1px solid #ffffff;
+	border-radius: 50px;
+	color: #ffffff;
+	font: 16px Arial, sans-serif;
+	text-decoration: none;
+	background-color: #ab64f3;
+	text-transform: uppercase;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+button:hover,
+.banner-btn:hover {
+	color: #ffffff;
+	box-shadow: 1px 1px 4px 1px #ab64f3;
+}
+
+#product {
+	padding: 15px 0;
+	background-color: #ffb699;
+}
+
+h2 {
+	padding: 30px 0px 30px 0px;    /*Добавьте внутренний отступ сверху и снизу: по 30px */
+	text-align: center;
+	color: #ea68d6;	/*Цвет заголовка #ea68d6*/
+}
+
+.product-wrap {
+	width: 470px;
+	margin: 0 auto;
+	
+}
+
+.product-block {
+	display: inline-block;  /*Нужно данный блочный элемент выстроить в одну линию*/
+	width: 200px;
+	margin: 20px 30px 30px 0px;		
+	border: 2px solid #b34e3d; 
+  				/*Добавьте сплошную границу в 2px с цветом #b34e3d*/
+	border-radius: 12px;
+	float:center;
+
+}
+
+.product-img {
+	display: block;
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	width: 120px;
+	height: 230px;	        /*Высота картинки должна составлять 230px*/
+}
+
+a {
+	display: block;
+	width: 100%;
+	margin: 15px 0px 15px 0px;			        	/*Внешний отступ сверху и снизу должен быть 15px*/
+	text-align: center;
+	color: rgba(179,78,61,0.8);					
+	font-family: Times New Roman, serif;		/*Семейство шрифта ссылки должно быть с заческами - Times New Roman*/
+	font-size: 18px;
+	font-weight: 700px;		        /*Насыщенность (жирность) шрифта составляет 700*/
+	transition: 0.3s;
+	cursor: pointer;
+}
+a:hover {
+	color: #ff5f94;
+}
+
+#gallery {
+	padding: 15px 0 15px 0;
+	background-color: rgba(117,255,236,0.7);       /*Добавьте цвет для заднего фона: 117,255,236 с прозрачностью в 0.7*/
+}
+
+.gallery-img {
+	display: block;
+	width: 250px;
+	margin: 0 auto 0 auto;			    	/*С помощью margin установите картинку по центру*/
+}
+
+.gallery_btn-wrap {
+	display: block;
+	width: 240px;
+	margin: 30px auto;
+}
+
+.gallery_btn {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	margin: 0 10px;
+}
+
+.gallery_btn:last-child {
+	margin-right: 0;
+}
+
+#contacts {
+	padding: 15px 0;
+	background-color: #fff6ad;
+}
+
+p {
+	margin: 0 30px 20px;
+}
+
+form {
+	margin: 35px 30px 20px;
+}
+
+input {
+	display: block;           			/*Сделайте так, чтобы input был блочным*/
+	width: 200px;
+	margin-bottom: 15px;
+	padding: 7px;
+	border: 1px solid #ff5f94;
+	border-radius: 10px;
+	color: #757575;
+	background-color: #ffe6fb;
+}
+
+.contacts-btn {
+	width: 200px;
+	height: 35px;
+	border-radius: 10px;
+}
+
+span {
+	display: block;
+	margin: 30px;
+	font-size: 8px;
+	font-style: italic;
+						/*Установите размер шрифта в 8px*/
+						   /*Текст должен быть наклонным*/
+}
